@@ -1,104 +1,171 @@
+<!DOCTYPE html>
+<html itemscope="" itemtype="http://schema.org/WebSite">
 
-<!DOCTYPE html><html itemscope="" itemtype="http://schema.org/WebSite"><head><link rel="stylesheet" media="screen" href="https://cdn2.dan.com/assets/application-889a4413be3db5fd10e840b5daa1145ae75157cbdf58c5f1b26ab606f0aa4834.css" /><link href='https://cdn1.dan.com/assets/icons/favicon-ed801dd88c062243f5e43cb5f8fced0a080ad854030ada505303e144c104f04b.ico' rel='icon' type='image/x-icon'>
-    <link href='https://cdn3.dan.com/assets/icons/touch-icon-iphone-cef164b4d6d29e1bff2bad9e49abaf143593a07d8a6e584f472b545b9e0c5631.png' rel='apple-touch-icon'>
-    <link href='https://cdn1.dan.com/assets/icons/touch-icon-ipad-7e9822ba1e8fa34ce37262f6746dbc72819d754f805a410dbeb2cedb08a05789.png' rel='apple-touch-icon' sizes='76x76'>
-    <link href='https://cdn3.dan.com/assets/icons/touch-icon-iphone-retina-42b99bfa7f037e7773362a76bf1ee70632541e4054f9003ce6f190dc9070fd8d.png' rel='apple-touch-icon' sizes='120x120'>
-    <link href='https://cdn2.dan.com/assets/icons/touch-icon-ipad-retina-56a8f2519ed554a55e6084d77c1ab7ef3511f8ed5e7877db50a9865621a79290.png' rel='apple-touch-icon' sizes='152x152'>
+<head>
+    <link rel="stylesheet" media="screen" href="signup.css" />
+    <link href='icon.ico' rel='icon' type='image/x-icon'>
+
+
+
+    <script src="signup-widget.js" defer="defer"></script>
+
+    <script src="vendor.js"></script>
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      
-      ga('create', 'UA-47793354-2', 'auto');
-      ga('require', 'displayfeatures');
-      ga('set', 'anonymizeIp', true);
-      
-      
-      // Optimizely Universal Analytics Integration code
-      // window.optimizely = window.optimizely || [];
-      // window.optimizely.push(['activateUniversalAnalytics']);
-      
-      window.url = {
-        withQueryString: '/users/signup',
-        withoutQueryString: '/users/signup'
-      }
-      
-      
-      
-      ga('send', 'pageview', url.withQueryString);
-    </script>
-    
-    <script>
-      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P9NHQJ');
-    </script>
-    <script type='json/attributes'>
-    []
-    </script>
-    <script type='json/product'>
-    null
-    </script>
-    
-    <script src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" defer="defer"></script>
-    
-    <script src="https://cdn2.dan.com/assets/vendor/webfont-d986c05e5c4c57c46f373491283064ff41deba094e98cd4711dd5000c0c9a0f3.js"></script><script>function AutoShrink(){
-      try {
-        elements = document.querySelectorAll('.auto-shrink');
-    
-        for(i = 0; i < elements.length; i++){
-          el = elements[i];
-    
-          height = parseInt(getComputedStyle(el).height);
-          lineHeight = parseInt(getComputedStyle(el).lineHeight);
-          fontSize = parseInt(getComputedStyle(el).fontSize);
-    
-          while(height > lineHeight + 10) {
-            fontSize--;
-    
-            el.style.fontSize = '' + fontSize + 'px';
-    
-            height = parseInt(getComputedStyle(el).height);
-            lineHeight = parseInt(getComputedStyle(el).lineHeight);
-          }
+        function AutoShrink() {
+            try {
+                elements = document.querySelectorAll('.auto-shrink');
+
+                for (i = 0; i < elements.length; i++) {
+                    el = elements[i];
+
+                    height = parseInt(getComputedStyle(el).height);
+                    lineHeight = parseInt(getComputedStyle(el).lineHeight);
+                    fontSize = parseInt(getComputedStyle(el).fontSize);
+
+                    while (height > lineHeight + 10) {
+                        fontSize--;
+
+                        el.style.fontSize = '' + fontSize + 'px';
+
+                        height = parseInt(getComputedStyle(el).height);
+                        lineHeight = parseInt(getComputedStyle(el).lineHeight);
+                    }
+                }
+            } catch (err) {
+                console.log("auto-shrink error", err.message)
+            }
         }
-      } catch(err) {
-        console.log("auto-shrink error", err.message)
-      }
-    }
-    
-    WebFont.load({
-      custom: {
-        families: ['Work Sans']
-      },
-      fontactive: function(familyName, fvd) {
-        if(familyName == 'Work Sans'){ setTimeout(AutoShrink, 100) }
-      },
-      events: true,
-      classes: false,
-    })
-    
-    if (document.addEventListener) document.addEventListener('DOMContentLoaded', AutoShrink)</script>
-    <meta charset="utf-8" /><meta content="IE=edge" http-equiv="X-UA-Compatible" /><meta content="width=device-width, minimum-scale=1, initial-scale=1" name="viewport" /><meta content="20191114123003" name="extra" /><meta name="csrf-param" content="authenticity_token" />
-    <meta name="csrf-token" content="xmLN4fyHvxOVlD3u7hL2dNhISFgzQVnhDAilQJMwuU9Tz76ZpBvDZA+m1NlXy15oFauJfoylamrCOzdkpwXwsA==" /><title>Sell Domains | DAN.COM</title><meta content="Sell Domain Names with DAN.COM. Create an account and get started! DAN.COM keeps you safe." name="description" /><link href="https://dan.com/users/signup" rel="canonical" /><link href="https://dan.com/users/signup" hreflang="en-us" itemprop="url" rel="alternate" /><link href="https://dan.com/nl-nl/gebruikers/registratie" hreflang="nl-nl" itemprop="" rel="alternate" /><link href="https://dan.com/es-es/users/signup" hreflang="es-es" itemprop="" rel="alternate" /><link href="https://dan.com/hi-in/users/signup" hreflang="hi-in" itemprop="" rel="alternate" /><link href="https://dan.com/de-de/users/signup" hreflang="de-de" itemprop="" rel="alternate" /><link href="https://dan.com/fr-fr/users/signup" hreflang="fr-fr" itemprop="" rel="alternate" /><link href="https://dan.com/zh-cn/users/signup" hreflang="zh-cn" itemprop="" rel="alternate" /></head><body><div itemprop="author" itemscope="" itemtype="http://schema.org/Organization" style="display:none!important;"><meta content="DAN.COM" itemprop="name" name="author" /><meta content="https://cdn0.dan.com/assets/logos/dan-456bbba14f47145716d14b594716f6270a6b8b409f9f83256127ba2ea243c26f.png" itemprop="logo" /></div><header class="headroom"><nav class="navbar navbar-default"><div class="navbar-header"><a class="navbar-brand" href="https://dan.com/"><img class="img-responsive" alt="DAN.COM" src="https://cdn3.dan.com/assets/logos/dan-full-logo2-02083f4ccb43e6b460dd32263aeee8dd30cdf9b83bd874002a4b6145d2a27510.svg" /></a><button class="navbar-toggle collapsed" data-target="#header-navbar" data-toggle="collapse" type="button"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div><div class="collapse navbar-collapse" id="header-navbar"><ul class="nav navbar-nav navbar-right"><li><a href="https://dan.com/users/login">Login</a></li></ul></div></nav></header><nav class="navbar navbar-default fake"></nav><div class="full-page"><section class="p-y-8-xs p-x-3-xs" id="signup"><div class="hidden-xs" id="signup-banner"><div id="clouds"><div class="cloud-lane-1"><img class="cloud" src="https://cdn1.dan.com/assets/chon/cloud-row-1-52bc93fc1711baa9e87a2ecec27858246b3672a52069630cc4d797eb51c0c1ec.png" /></div><div class="cloud-lane-2"><img class="cloud" src="https://cdn3.dan.com/assets/chon/cloud-row-2-667b4a2375e4e157e54671254b7cc7e5095cb60273ae5af5b1502f64ca5e6156.png" /></div><div class="cloud-lane-3"><img class="cloud" src="https://cdn2.dan.com/assets/chon/cloud-row-3-7e3e0d2e0f5ba73170e7baf33c533d836b0a470f47dcf3e6135ee65d56ac7dad.png" /></div></div><div id="front"></div><div class="p-y-10 bg-gray-blue-dark" id="foot"><br /></div></div><div id="form"><div class="container"><div class="row"><div class="col-sm-22 col-sm-offset-1 col-md-18 col-md-offset-3 col-lg-16 col-lg-offset-4"><div class="text-center"><h1 class="m-t-0">Build &amp; grow your domain business</h1><p class="p-b-5 hidden-xs">Do you own quality domain names best suited for selling?
-    Start using the right tools to appeal to end-users, and sell at prices worthy of your domains!
-    </p></div></div><div class="col-sm-20 col-sm-offset-2 col-md-16 col-md-offset-4 col-lg-14 col-lg-offset-5"><script>var mtcaptchaConfig = {
-      "sitekey": "MTPublic-bOFCDQO4u",
-      "action": "signup",
-      "lang": "en"
-    };
-    
-    (function(){
-      var mt_service = document.createElement('script');
-      mt_service.async = true;
-      mt_service.src = 'https://service.mtcaptcha.com/mtcv1/client/mtcaptcha.min.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(mt_service);
-    
-      var mt_service2 = document.createElement('script');
-      mt_service2.async = true;
-      mt_service2.src = 'https://service2.mtcaptcha.com/mtcv1/client/mtcaptcha2.min.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(mt_service2);
-    }) ();</script><form class="simple_form panel panel-form signup m-b-0" id="new_admin_user" novalidate="novalidate" data-client-side-validations="{&quot;html_settings&quot;:{&quot;type&quot;:&quot;SimpleForm::FormBuilder&quot;,&quot;error_class&quot;:&quot;help-block&quot;,&quot;error_tag&quot;:&quot;span&quot;,&quot;wrapper_error_class&quot;:&quot;has-error&quot;,&quot;wrapper_tag&quot;:&quot;div&quot;,&quot;wrapper_class&quot;:&quot;form-group&quot;,&quot;wrapper&quot;:&quot;vertical_form&quot;},&quot;number_format&quot;:{&quot;separator&quot;:&quot;.&quot;,&quot;delimiter&quot;:&quot;,&quot;},&quot;validators&quot;:{&quot;admin_user[first_name]&quot;:{&quot;presence&quot;:[{&quot;message&quot;:&quot;can&#39;t be blank&quot;}]},&quot;admin_user[last_name]&quot;:{&quot;presence&quot;:[{&quot;message&quot;:&quot;can&#39;t be blank&quot;}]},&quot;admin_user[email]&quot;:{&quot;presence&quot;:[{&quot;message&quot;:&quot;can&#39;t be blank&quot;}],&quot;uniqueness&quot;:[{&quot;message&quot;:&quot;has already been taken&quot;,&quot;case_sensitive&quot;:true,&quot;allow_blank&quot;:true}],&quot;format&quot;:[{&quot;message&quot;:&quot;is invalid&quot;,&quot;with&quot;:{&quot;source&quot;:&quot;^[^@\\s]+@[^@\\s]+$&quot;,&quot;options&quot;:&quot;&quot;},&quot;allow_blank&quot;:true}]},&quot;admin_user[password]&quot;:{&quot;presence&quot;:[{&quot;message&quot;:&quot;can&#39;t be blank&quot;}],&quot;length&quot;:[{&quot;messages&quot;:{&quot;minimum&quot;:&quot;is too short (minimum is 8 characters)&quot;,&quot;maximum&quot;:&quot;is too long (maximum is 128 characters)&quot;},&quot;allow_blank&quot;:true,&quot;minimum&quot;:8,&quot;maximum&quot;:128}]}}}" action="/users/signup" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="qC5h0itjhKR3HZBe15yAEnbuIs7QOgg2K2MP14rYqpY9gxKqc//40+0veWluRSgOuw3j6G/eO73lUJ3zvu3jaQ==" /><input type="text" name="full_name" id="full_name" class="content-input" /><textarea name="comment" id="comment" class="content-input">
-    </textarea><div class="has-error base-error"></div><div class="panel-body p-t-6"><div class="row"><div class="col-sm-12"><div class="form-group string optional admin_user_first_name"><input class="form-control string optional" placeholder="Your first name" type="text" name="admin_user[first_name]" id="admin_user_first_name" /></div></div><div class="col-sm-12"><div class="form-group string optional admin_user_last_name"><input class="form-control string optional" placeholder="Your last name" type="text" name="admin_user[last_name]" id="admin_user_last_name" /></div></div></div><div class="row"><div class="col-sm-12"><div class="form-group email optional admin_user_email"><input class="form-control string email optional" placeholder="Your email address" type="email" value="" name="admin_user[email]" id="admin_user_email" /></div></div><div class="col-sm-12"><div class="form-group password optional admin_user_password"><input class="form-control password optional" placeholder="Your password" type="password" name="admin_user[password]" id="admin_user_password" /></div></div></div><div class="row m-t-3-xs"><div class="col-sm-12"><p class="text-gray-dark">Do you represent a company?</p></div><div class="col-sm-12 col-sm-offset-0 col-xs-offset-6"><input type="hidden" name="admin_user[client_attributes][client_type]" value="" /><div class="signup-radio text-gray-dark col-sm-12 col-xs-9"><input onclick="companyOpenClose()" type="radio" value="individual" checked="checked" name="admin_user[client_attributes][client_type]" id="admin_user_client_attributes_client_type_individual" /><label class="collection_radio_buttons" for="admin_user_client_attributes_client_type_individual">No</label></div><div class="signup-radio text-gray-dark col-sm-12 col-xs-9"><input onclick="companyOpenClose()" type="radio" value="business" name="admin_user[client_attributes][client_type]" id="admin_user_client_attributes_client_type_business" /><label class="collection_radio_buttons" for="admin_user_client_attributes_client_type_business">Yes</label></div></div></div><div class="row m-t-3-xs" id="company" style="display: none;"><div class="col-sm-12"><div class="form-group string required admin_user_client_company"><input class="form-control string required" placeholder="Your company name" type="text" name="admin_user[client_attributes][company]" id="admin_user_client_attributes_company" /></div></div><div class="col-sm-12"><div class="select-dropdown"><select name="admin_user[client_attributes][country_code]" id="admin_user_client_attributes_country_code"><option value="">Country</option>
+
+        WebFont.load({
+            custom: {
+                families: ['Work Sans']
+            },
+            fontactive: function(familyName, fvd) {
+                if (familyName == 'Work Sans') {
+                    setTimeout(AutoShrink, 100)
+                }
+            },
+            events: true,
+            classes: false,
+        })
+
+        if (document.addEventListener) document.addEventListener('DOMContentLoaded', AutoShrink)
+    </script>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, minimum-scale=1, initial-scale=1" name="viewport" />
+    <meta content="20191114123003" name="extra" />
+    <meta name="csrf-param" content="authenticity_token" />
+    <meta name="csrf-token" content="xmLN4fyHvxOVlD3u7hL2dNhISFgzQVnhDAilQJMwuU9Tz76ZpBvDZA+m1NlXy15oFauJfoylamrCOzdkpwXwsA==" />
+    <title>Sell Domains</title>
+    <meta content="Sell Domain Names with DAN.COM. Create an account and get started! DAN.COM keeps you safe." name="description" />
+    <link href="#" rel="canonical" />
+    <link href="#" hreflang="en-us" itemprop="url" rel="alternate" />
+    <link href="#" hreflang="nl-nl" itemprop="" rel="alternate" />
+    <link href="#" hreflang="es-es" itemprop="" rel="alternate" />
+    <link href="#" hreflang="hi-in" itemprop="" rel="alternate" />
+    <link href="#" hreflang="de-de" itemprop="" rel="alternate" />
+    <link href="#" hreflang="fr-fr" itemprop="" rel="alternate" />
+    <link href="#" hreflang="zh-cn" itemprop="" rel="alternate" />
+</head>
+
+<body>
+    <div itemprop="author" style="display:none!important;">
+
+    </div>
+    <header class="headroom">
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html"><img class="img-responsive" alt="DAN.COM" src="icon.ico" /></a><button class="navbar-toggle collapsed" data-target="#header-navbar" data-toggle="collapse" type="button"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div>
+            <div class="collapse navbar-collapse" id="header-navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <nav class="navbar navbar-default fake"></nav>
+    <div class="full-page">
+        <section class="p-y-8-xs p-x-3-xs" id="signup">
+            <div class="hidden-xs" id="signup-banner">
+                <div id="clouds">
+                    <div class="cloud-lane-1"><img class="cloud" src="cloudy.png" /></div>
+                    <div class="cloud-lane-2"><img class="cloud" src="cloudy2.png" /></div>
+                    <div class="cloud-lane-3"><img class="cloud" src="grey.png" /></div>
+                </div>
+                <div id="front"></div>
+                <div class="p-y-10 bg-gray-blue-dark" id="foot"><br /></div>
+            </div>
+            <div id="form">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-22 col-sm-offset-1 col-md-18 col-md-offset-3 col-lg-16 col-lg-offset-4">
+                            <div class="text-center">
+                                <h1 class="m-t-0">Build &amp; grow your domain business</h1>
+                                <p class="p-b-5 hidden-xs">Do you own quality domain names best suited for selling? Start using the right tools to appeal to end-users, and sell at prices worthy of your domains!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-20 col-sm-offset-2 col-md-16 col-md-offset-4 col-lg-14 col-lg-offset-5">
+                            <script>
+                                var mtcaptchaConfig = {
+                                    "sitekey": "MTPublic-bOFCDQO4u",
+                                    "action": "signup",
+                                    "lang": "en"
+                                };
+
+                                (function() {
+                                    var mt_service = document.createElement('script');
+                                    mt_service.async = true;
+                                    mt_service.src = 'captcha.js';
+                                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(mt_service);
+
+                                    var mt_service2 = document.createElement('script');
+                                    mt_service2.async = true;
+                                    mt_service2.src = 'captcha2.js';
+                                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(mt_service2);
+                                })();
+                            </script>
+                            <form class="simple_form panel panel-form signup m-b-0" id="new_admin_user" novalidate="novalidate" data-client-side-validations="{&quot;html_settings&quot;:{&quot;type&quot;:&quot;SimpleForm::FormBuilder&quot;,&quot;error_class&quot;:&quot;help-block&quot;,&quot;error_tag&quot;:&quot;span&quot;,&quot;wrapper_error_class&quot;:&quot;has-error&quot;,&quot;wrapper_tag&quot;:&quot;div&quot;,&quot;wrapper_class&quot;:&quot;form-group&quot;,&quot;wrapper&quot;:&quot;vertical_form&quot;},&quot;number_format&quot;:{&quot;separator&quot;:&quot;.&quot;,&quot;delimiter&quot;:&quot;,&quot;},&quot;validators&quot;:{&quot;admin_user[first_name]&quot;:{&quot;presence&quot;:[{&quot;message&quot;:&quot;can&#39;t be blank&quot;}]},&quot;admin_user[last_name]&quot;:{&quot;presence&quot;:[{&quot;message&quot;:&quot;can&#39;t be blank&quot;}]},&quot;admin_user[email]&quot;:{&quot;presence&quot;:[{&quot;message&quot;:&quot;can&#39;t be blank&quot;}],&quot;uniqueness&quot;:[{&quot;message&quot;:&quot;has already been taken&quot;,&quot;case_sensitive&quot;:true,&quot;allow_blank&quot;:true}],&quot;format&quot;:[{&quot;message&quot;:&quot;is invalid&quot;,&quot;with&quot;:{&quot;source&quot;:&quot;^[^@\\s]+@[^@\\s]+$&quot;,&quot;options&quot;:&quot;&quot;},&quot;allow_blank&quot;:true}]},&quot;admin_user[password]&quot;:{&quot;presence&quot;:[{&quot;message&quot;:&quot;can&#39;t be blank&quot;}],&quot;length&quot;:[{&quot;messages&quot;:{&quot;minimum&quot;:&quot;is too short (minimum is 8 characters)&quot;,&quot;maximum&quot;:&quot;is too long (maximum is 128 characters)&quot;},&quot;allow_blank&quot;:true,&quot;minimum&quot;:8,&quot;maximum&quot;:128}]}}}"
+                                action="/users/signup" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="qC5h0itjhKR3HZBe15yAEnbuIs7QOgg2K2MP14rYqpY9gxKqc//40+0veWluRSgOuw3j6G/eO73lUJ3zvu3jaQ==" /><input type="text" name="full_name"
+                                    id="full_name" class="content-input" /><textarea name="comment" id="comment" class="content-input">
+    </textarea>
+                                <div class="has-error base-error"></div>
+                                <div class="panel-body p-t-6">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-group string optional admin_user_first_name"><input class="form-control string optional" placeholder="Your first name" type="text" name="admin_user[first_name]" id="admin_user_first_name" /></div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-group string optional admin_user_last_name"><input class="form-control string optional" placeholder="Your last name" type="text" name="admin_user[last_name]" id="admin_user_last_name" /></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-group email optional admin_user_email"><input class="form-control string email optional" placeholder="Your email address" type="email" value="" name="admin_user[email]" id="admin_user_email" /></div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-group password optional admin_user_password"><input class="form-control password optional" placeholder="Your password" type="password" name="admin_user[password]" id="admin_user_password" /></div>
+                                        </div>
+                                    </div>
+                                    <div class="row m-t-3-xs">
+                                        <div class="col-sm-12">
+                                            <p class="text-gray-dark">Do you represent a company?</p>
+                                        </div>
+                                        <div class="col-sm-12 col-sm-offset-0 col-xs-offset-6"><input type="hidden" name="admin_user[client_attributes][client_type]" value="" />
+                                            <div class="signup-radio text-gray-dark col-sm-12 col-xs-9"><input onclick="companyOpenClose()" type="radio" value="individual" checked="checked" name="admin_user[client_attributes][client_type]" id="admin_user_client_attributes_client_type_individual" /><label class="collection_radio_buttons"
+                                                    for="admin_user_client_attributes_client_type_individual">No</label></div>
+                                            <div class="signup-radio text-gray-dark col-sm-12 col-xs-9"><input onclick="companyOpenClose()" type="radio" value="business" name="admin_user[client_attributes][client_type]" id="admin_user_client_attributes_client_type_business" /><label class="collection_radio_buttons"
+                                                    for="admin_user_client_attributes_client_type_business">Yes</label></div>
+                                        </div>
+                                    </div>
+                                    <div class="row m-t-3-xs" id="company" style="display: none;">
+                                        <div class="col-sm-12">
+                                            <div class="form-group string required admin_user_client_company"><input class="form-control string required" placeholder="Your company name" type="text" name="admin_user[client_attributes][company]" id="admin_user_client_attributes_company" /></div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="select-dropdown"><select name="admin_user[client_attributes][country_code]" id="admin_user_client_attributes_country_code"><option value="">Country</option>
     <option value="AF">Afghanistan</option>
     <option value="AL">Albania</option>
     <option value="DZ">Algeria</option>
@@ -347,26 +414,76 @@
     <option value="YE">Yemen</option>
     <option value="ZM">Zambia</option>
     <option value="ZW">Zimbabwe</option>
-    <option value="AX">Åland Islands</option></select></div></div></div></div><div class="border-top"></div><div class="m-t-5"><div class="form-group boolean optional admin_user_terms"><div class="checkbox"><input value="0" type="hidden" name="admin_user[terms]" /><div class="checkbox-outer"><input class="boolean optional" type="checkbox" value="1" name="admin_user[terms]" id="admin_user_terms" /><span class=''></span></div><label class="text-gray-dark boolean optional" for="admin_user_terms">I accept the <a href="/legal/terms-of-use">terms of use</a> of DAN.COM.</label></div></div><div class="mtcaptcha"><div class="row"><div class="col-md-20 col-md-offset-2"><div class="well alert alert-danger">Your adblocker is blocking our captcha, please allow it so you can complete the signup</div></div></div></div><div class="m-t-6"></div><input type="submit" name="commit" value="Create your account" id="submit" class="btn btn-default btn-lg" data-disable-with="Create your account" /><div class="m-t-6"></div></div></form><div class="m-t-5 hidden-xs"></div></div></div></div></div></section><section class="bg-gray-blue-dark p-y-8 p-x-3"><div class="container"><div class="row"><h2 class="text-white text-center m-t-0">Why choose DAN.COM?</h2><div class="row p-t-5"><div class="col-sm-8 p-b-0"><div class="text-center"><img class="media-icon" src="https://cdn1.dan.com/assets/chon/decide-howto-icon-c479a0b02a40907b9701a5920a2591ba6bdd359f09aa023351c9f731fd50e520.png" /></div><div class="text-center"><h3 class="text-white">Decide how to sell</h3><p class="text-white">Set your prices, choose what buying options to offer, and personalize your pages to the colors of your brand.</p></div></div><div class="col-sm-8 p-b-0 m-t-5-xs"><div class="text-center"><img class="media-icon" src="https://cdn2.dan.com/assets/chon/become-visible-icon-915b538f1081e8f0316248e5265f01f24b324f42ff2494dd8e956509bca04efc.png" /></div><div class="text-center"><h3 class="text-white">Become visible online</h3><p class="text-white">Welcome buyers on optimized For Sale pages that convert better than any other. Rank on Google in no time!</p></div></div><div class="col-sm-8 p-b-0 m-t-5-xs"><div class="text-center"><img class="media-icon" src="https://cdn0.dan.com/assets/chon/get-paid-icon-a2a7bc819d8a577a08517670b81228ff45990bf461915a3756169e358fae08e4.png" /></div><div class="text-center"><h3 class="text-white">Get paid</h3><p class="text-white">Fast &amp; easy domain escrow, daily payouts, fully automated invoicing and more! You can sit back and relax!</p></div></div></div></div></div></section><section class="p-y-8 p-x-3"><div class="container"><div class="row"><div class="col-sm-14 col-sm-offset-5"><div class="text-center m-b-8"><h1 class="m-t-0">Best-in-Class domaining tools</h1></div></div></div><div class="row"><div class="carousel slide carousel-gray" data-ride="carousel" id="carousel-features"><ol class="carousel-indicators"><li class="active" data-slide-to="0" data-target="#carousel-features"></li><li data-slide-to="1" data-target="#carousel-features"></li><li data-slide-to="2" data-target="#carousel-features"></li></ol><div class="carousel-inner" role="listbox"><div class="item active"><div class="row"><div class="col-sm-14"><img class="img-responsive hidden-xs" src="https://cdn2.dan.com/assets/chon/screenshots/product-page-1d1fd37ab51f7fc66a4e02c62a94692afd47aa5279d7b51c562d48a60f23b293.png" /><img class="img-responsive visible-xs" src="https://cdn2.dan.com/assets/chon/screenshots/M-product-page-a7e40451af9dc94d8405e2a3ae5cdb5a4573cb16222385c73a2cc8f2272f06be.png" /></div><div class="col-sm-10 text-mobile-overlay"><h2>Clearly for sale</h2><p>For Sale pages made by DAN.COM are clear and ad-free, they leave no room for confusion. The availability of the domain, price and ownership information are obvious. And, gorgeous traffic stats give it even more value.
-    </p><p class="m-b-0">This transparency &amp; depth combine for industry leading conversion rates!
-    </p></div></div></div><div class="item"><div class="row"><div class="col-sm-14"><img class="img-responsive hidden-xs" src="https://cdn2.dan.com/assets/chon/screenshots/sellers-profile-19c989f8fff66eb9c7fddc570630943fbbef3b091b8fd28b6b0fbefab7b80bf0.png" /><img class="img-responsive visible-xs" src="https://cdn3.dan.com/assets/chon/screenshots/M-sellers-profile-3a24daba0f5eb9e3977b76e7d1f58e2bf0c3c4d0167d5f8fe9bdf9582ee35b31.png" /></div><div class="col-sm-10 text-mobile-overlay"><h2>A neat shop window</h2><p>Promoting your domains goes a long way towards increasing sales. This is why DAN.COM helps you create a beautiful profile that buyers can easily browse and search through.
-    </p><p class="m-b-0">Write something about yourself, add a picture &amp; background, and get your business viral on social media!
-    </p></div></div></div><div class="item"><div class="row"><div class="col-sm-14"><img class="img-responsive hidden-xs" src="https://cdn2.dan.com/assets/chon/screenshots/portfolio-b6ba48faf7b6ede53cab210c7662913460e5a701ec44889f5ab0c324dd53815f.png" /><img class="img-responsive visible-xs" src="https://cdn0.dan.com/assets/chon/screenshots/M-portfolio-ba52798ffa1dddaf20a050fa4471cb22b223b2c452250aebcbc6097f9339b9d7.png" /></div><div class="col-sm-10 text-mobile-overlay"><h2>Manage &amp; chat</h2><p>Your account holds great tools to manage your domain business. The interface is extremely simple and straightforward. It focuses on making your workflow fast and efficient.
-    </p><p class="m-b-0">Each new buyer interested in your domains pops-up in a new chat window. You can simply jump in and discuss openly!
-    </p></div></div></div></div><a class="left carousel-control" data-slide="prev" href="#carousel-features" role="button"><span aria-hidden="true" class="icon-arrow-big arrow-left"></span></a><a class="right carousel-control" data-slide="next" href="#carousel-features" role="button"><span aria-hidden="true" class="icon-arrow-big arrow-right"></span></a></div></div></div></section><section class="bg-gray-blue-dark m-t-8 p-y-8 p-x-3 text-center-mobile"><div class="container"><div class="row-inline"><div class="col-sm-12"><span class="comission-text">9%</span><p class="m-b-0">commission</p><h2 class="text-white">No sale, no cost to you</h2><p class="text-white m-b-5">Join today and use all tools for free!
-    Only once you successfully conclude a sale with a buyer will you pay a commission of 9% (excluding VAT, if applicable).
-    </p><a class="btn btn-default js-anchor-link" href="#signup-banner">Create account</a><div class="visible-xs m-t-8"><img src="https://cdn0.dan.com/assets/chon/signup/chart-mobile-en-5f54d551bafd5b429589f418cde869143496ea7eac58713000ddf32645990150.png" /></div></div><div class="col-sm-12 text-right v-middle hidden-xs"></div></div></div></section><section class="p-y-8 p-x-3"><div class="container"><div class="row"><div class="text-center"><h2 class="m-t-0">Frequently asked questions</h2></div><div class="row m-t-5"><div class="col-sm-24 text-center-mobile"><h3>How do you increase my domain sales?</h3><p><script type="application/json" id="js-react-on-rails-context">{"railsEnv":"production","inMailer":false,"i18nLocale":"en-us","i18nDefaultLocale":"en-us","rorVersion":"11.2.2","rorPro":false,"href":"https://dan.com/users/signup","location":"/users/signup","scheme":"https","host":"dan.com","port":null,"pathname":"/users/signup","search":null,"httpAcceptLanguage":"en-US,en;q=0.9","serverSide":false}</script>
-    <div id="CollapseText-react-component-c5f78aaa-3859-4095-bb03-e825ca3d892e"></div>
-          <script type="application/json" class="js-react-on-rails-component" data-component-name="CollapseText" data-dom-id="CollapseText-react-component-c5f78aaa-3859-4095-bb03-e825ca3d892e">{"length":120,"content":"DAN.COM helps you optimize your online channels to get more sales. For Sale pages and seller profiles are for example frequently updated to improve conversion rates. We also invest heavily in SEO so you rank in Google. Finally, we include Facebook and Twitter markup so your domains and portfolio look great when you share them on social media."}</script>
-          
-    </p></div></div><div class="row m-t-5"><div class="col-sm-24 text-center-mobile"><h3>I sold a domain, when can I expect my payment?</h3><p><div id="CollapseText-react-component-f39bedae-da6d-4b1f-8452-f43dab5781db"></div>
-          <script type="application/json" class="js-react-on-rails-component" data-component-name="CollapseText" data-dom-id="CollapseText-react-component-f39bedae-da6d-4b1f-8452-f43dab5781db">{"length":120,"content":"The process normally takes less than 24 hours. It can, however,​ vary slightly depending on the buyer. We indeed have to wait for their payment before we can forward you the funds."}</script>
-          
-    </p></div></div><div class="row m-t-5"><div class="col-sm-24 text-center-mobile"><h3>How does selling a domain in installments work?</h3><p><div id="CollapseText-react-component-070a2e86-baf2-4709-b2a6-5d3ea9cab172"></div>
-          <script type="application/json" class="js-react-on-rails-component" data-component-name="CollapseText" data-dom-id="CollapseText-react-component-070a2e86-baf2-4709-b2a6-5d3ea9cab172">{"length":120,"content":"You can enable offering installments to your buyers directly from your account settings or portfolio.\n\nOnce the buyer has initiated the transaction by paying the first installed payment we proceed and take your domain in escrow until the total purchase price is paid.\n\nWhen the buyer is in default, you get to keep the received installed payments and the domain will be returned to you."}</script>
-          
-    </p></div></div></div><div class="row p-t-5"><div class="col-sm-14 col-sm-offset-5"><div class="text-center"><a class="btn btn-ghost-gray" href="/help/seller-guide">Read more answers</a></div></div></div></div></section><section class="brand-light-background p-y-8 p-x-3"><div class="container"><div class="row"><div class="col-sm-24"><div class="text-center"><h2 class="m-t-0">We keep you safe</h2><div class="row m-t-8"><div class="col-sm-8 p-b-0"><div class="text-center"><img class="media-icon" src="https://cdn1.dan.com/assets/chon/protection-9075636568d712e030480b7474acebc94aa241133b5a568aaa6fa600239cbd76.png" /></div><div class="text-center"><h3>Seller protection program</h3><p>We protect every transaction through a careful escrow process, leading to 100% successful acquisitions since 2014.</p></div></div><div class="col-sm-8 p-b-0 m-t-5-xs"><div class="text-center"><img class="media-icon" src="https://cdn1.dan.com/assets/chon/safe-ca2bc30670548268c64c3eee81aefbf8990ebd29610c4c09d98d094606f3d28f.png" /></div><div class="text-center"><h3>Safe payments by Adyen</h3><p>Our partner Adyen processes all payments with professional-grade security so you never have to worry!</p></div></div><div class="col-sm-8 p-b-0 m-t-5-xs"><div class="text-center"><img class="media-icon" src="https://cdn0.dan.com/assets/chon/support-19b7d2ae006fc9be8e238341b47f881bee33e594a4bd164a11a661c94bc0907c.png" /></div><div class="text-center"><h3>Best Customer support</h3><p>Sellers love our support team! We are always available for you and respond to your chat or email within 51 minutes.</p></div></div></div></div></div></div></div></section><section class="p-y-8 p-x-3"><div class="container"><div class="text-center"><h2 class="m-t-0 m-b-5">Ready, set, go!</h2><a class="btn btn-default js-anchor-link" href="#signup-banner">Create your account</a></div></div></section></div><div class="footer-body false"><div class="container-fluid"><div class="links-row row"><div class="col-md-6 col-sm-24 p-y-2"><div class="footer-brand"><img src="https://cdn0.dan.com/assets/logos/logo-dan-white-type-transparent-color-148x-56x-29251d96a3e4e340d65708d147ba10e5e347b199737448990a62b9da0ef4bcde.svg" /></div><div class="follow-us">Follow us</div><div class="social_networks"><a href="https://twitter.com/undeveloped"><div class="footer-link"><span class="icon"><i class="fa fa-twitter"></i></span><span>Twitter</span></div></a></div><div class="social_networks"><a href="https://blog.undeveloped.com/"><div class="footer-link"><span class="icon"><i class="fa fa-medium"></i></span><span>Medium</span></div></a></div></div><div class="col-md-6 col-sm-24 p-y-2"><a href="/"><div class="footer-link">Home</div></a><a href="/about"><div class="footer-link">About us</div></a><a href="https://blog.undeveloped.com/"><div class="footer-link">Blog</div></a><a href="/sitemap"><div class="footer-link">Sitemap</div></a><a href="/legal"><div class="footer-link">Legal</div></a></div><div class="col-md-6 col-sm-24 p-y-2"><a href="https://dan.com/search"><div class="footer-link">Buy domains</div></a><a href="/users/signup"><div class="footer-link">Sell domains</div></a><a href="/help/buyer-guide"><div class="footer-link">Domain buyer guide</div></a><a href="/help/seller-guide"><div class="footer-link">Domain seller guide</div></a><a href="/help/buyer-guide"><div class="footer-link">Help center</div></a></div><div class="col-md-6 col-sm-24 p-y-2"><a href="https://dan.pr.co"><div class="footer-link">Newsroom</div></a><a href="https://explorer.dan.com"><div class="footer-link">DAN transaction explorer</div></a><a href="https://explorer.dan.com"><div class="footer-link">WHOIS 2.0</div></a><a href="/contact"><div class="footer-link">Contact</div></a></div></div><div class="spacer-row row"><div class="col-md-24"><div class="spacer"></div></div></div><div class="copyright-row row"><div class="col-md-18 text-left p-t-3"><div class="text-muted">Copyright © 2013 - 2019 Dan.com an Undeveloped BV subsidiary. All Rights Reserved.</div></div><div class="col-md-6 text-right p-t-3"><div class="dropup dropup-sm"><button class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="locale-dropdown" type="button">English<i class="dropdown-caret icon-arrow"></i></button><ul class="dropdown-menu"><li><a rel="nofollow" href="?new_locale=nl-nl">Nederlands</a></li><li><a rel="nofollow" href="?new_locale=es-es">Español</a></li><li><a rel="nofollow" href="?new_locale=hi-in">हिंदी</a></li><li><a rel="nofollow" href="?new_locale=de-de">Deutsch</a></li><li><a rel="nofollow" href="?new_locale=fr-fr">Français</a></li><li><a rel="nofollow" href="?new_locale=zh-cn">中文</a></li></ul></div></div></div></div></div><script>function setI18nLocale() {
-      window.I18n.defaultLocale = "en-us"
-      window.I18n.locale = "en-us"
-    }</script><script src="https://cdn1.dan.com/assets/welcome-a94ec62d82b97ddc7ac6ec0700efde4dd7427595e0eb0fddd93dfbf40b0d1f18.js"></script><script src="https://cdn1.dan.com/assets/i18n/marketplace-en-us-1428c06aedc6fc1e9263e878a183099d284eeea71662d57a730497c7593122ef.js" onload="setI18nLocale()"></script><script src="https://cdn1.dan.com/assets/common-bundle-1f5810db51a2158c5b6ae78d3f87fa83517c7fed2cb6d0db394a25f4f4c71b96.js" defer="defer"></script><script src="https://cdn3.dan.com/assets/client-bundle-c43c28902af3f610f9e2bdaa147fd6dfd7c29fbc933b1cb9d2dabf51a63fe66f.js" defer="defer"></script><script id="IntercomSettingsScriptTag">window.intercomSettings = {"app_id":"e2frgfyw"};(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/e2frgfyw';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}};})()</script>
-    </body></html>
+    <option value="AX">Åland Islands</option></select></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border-top"></div>
+                                <div class="m-t-5">
+                                    <div class="form-group boolean optional admin_user_terms">
+                                        <div class="checkbox"><input value="0" type="hidden" name="admin_user[terms]" />
+                                            <div class="checkbox-outer"><input class="boolean optional" type="checkbox" value="1" name="admin_user[terms]" id="admin_user_terms" /><span class=''></span></div><label class="text-gray-dark boolean optional" for="admin_user_terms">I accept the <a href="terms.pdf">terms of use</a></label></div>
+                                    </div>
+                                    <div class="mtcaptcha">
+                                        <div class="row">
+                                            <div class="col-md-20 col-md-offset-2">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="m-t-6"></div><input type="submit" name="commit" value="Create your account" id="submit" class="btn btn-default btn-lg" data-disable-with="Create your account" />
+                                    <div class="m-t-6"></div>
+                                </div>
+                            </form>
+                            <div class="m-t-5 hidden-xs"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-gray-blue-dark p-y-8 p-x-3">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-white text-center m-t-0">Why us?</h2>
+                    <div class="row p-t-5">
+                        <div class="col-sm-8 p-b-0">
+                            <div class="text-center"><img class="media-icon" src="gear.png" /></div>
+                            <div class="text-center">
+                                <h3 class="text-white">Decide how to sell</h3>
+                                <p class="text-white">Set your prices, choose what buying options to offer, and personalize your pages to the colors of your brand.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-8 p-b-0 m-t-5-xs">
+                            <div class="text-center"><img class="media-icon" src="card.png" /></div>
+                            <div class="text-center">
+                                <h3 class="text-white">Become visible online</h3>
+                                <p class="text-white">Welcome buyers on optimized For Sale pages that convert better than any other. Rank on Google in no time!</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-8 p-b-0 m-t-5-xs">
+                            <div class="text-center"><img class="media-icon" src="boi.png" /></div>
+                            <div class="text-center">
+                                <h3 class="text-white">Get paid</h3>
+                                <p class="text-white">Fast &amp; easy domain escrow, daily payouts, fully automated invoicing and more! You can sit back and relax!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <script>
+            function setI18nLocale() {
+                window.I18n.defaultLocale = "en-us"
+                window.I18n.locale = "en-us"
+            }
+        </script>
+        <script src="signup-welcome.js"></script>
+        <script src="signup-marketplace.js" onload="setI18nLocale()"></script>
+        <script src="signup-common.js" defer="defer"></script>
+        <script src="signup-client.js" defer="defer"></script>
+
+</body>
+
+</html>
