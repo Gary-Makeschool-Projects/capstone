@@ -40,9 +40,6 @@ def signup():
     # render signup page
     return render_template('signup.html')
 
-    if request.method == 'POST':
-        return send_from_directory('static/', filename='terms.txt')
-
 
 if __name__ == "__main__":
     app.secret_key = os.urandom(24)
