@@ -2,14 +2,14 @@
 <html itemscope="" itemtype="http://schema.org/WebSite">
 
 <head>
-    <link rel="stylesheet" media="screen" href="signup.css" />
-    <link href='icon.ico' rel='icon' type='image/x-icon'>
+    <link rel="stylesheet" media="screen" href="static/signup.css" />
+    <link href='static/icon.ico' rel='icon' type='image/x-icon'>
 
 
 
-    <script src="signup-widget.js" defer="defer"></script>
+    <script src="static/signup-widget.js" defer="defer"></script>
 
-    <script src="vendor.js"></script>
+    <script src="static/vendor.js"></script>
     <script>
         function AutoShrink() {
             try {
@@ -58,7 +58,7 @@
     <meta name="csrf-param" content="authenticity_token" />
     <meta name="csrf-token" content="xmLN4fyHvxOVlD3u7hL2dNhISFgzQVnhDAilQJMwuU9Tz76ZpBvDZA+m1NlXy15oFauJfoylamrCOzdkpwXwsA==" />
     <title>Sell Domains</title>
-    <meta content="Sell Domain Names with DAN.COM. Create an account and get started! DAN.COM keeps you safe." name="description" />
+
     <link href="#" rel="canonical" />
     <link href="#" hreflang="en-us" itemprop="url" rel="alternate" />
     <link href="#" hreflang="nl-nl" itemprop="" rel="alternate" />
@@ -76,11 +76,11 @@
     <header class="headroom">
         <nav class="navbar navbar-default">
             <div class="navbar-header">
-                <a class="navbar-brand" href="index.html"><img class="img-responsive" alt="DAN.COM" src="icon.ico" /></a><button class="navbar-toggle collapsed" data-target="#header-navbar" data-toggle="collapse" type="button"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div>
+                <a class="navbar-brand" href="{{url_for('index')}}}"><img class="img-responsive" alt="DAN.COM" src="static/icon.ico" /></a><button class="navbar-toggle collapsed" data-target="#header-navbar" data-toggle="collapse" type="button"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div>
             <div class="collapse navbar-collapse" id="header-navbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="login.html">Login</a></li>
+                    <li><a href="{{url_for('index')}}">Home</a></li>
+                    <li><a href="{{url_for('login')}}">Login</a></li>
                 </ul>
             </div>
         </nav>
@@ -90,9 +90,9 @@
         <section class="p-y-8-xs p-x-3-xs" id="signup">
             <div class="hidden-xs" id="signup-banner">
                 <div id="clouds">
-                    <div class="cloud-lane-1"><img class="cloud" src="cloudy.png" /></div>
-                    <div class="cloud-lane-2"><img class="cloud" src="cloudy2.png" /></div>
-                    <div class="cloud-lane-3"><img class="cloud" src="grey.png" /></div>
+                    <div class="cloud-lane-1"><img class="cloud" src="static/cloudy.png" /></div>
+                    <div class="cloud-lane-2"><img class="cloud" src="static/cloudy2.png" /></div>
+                    <div class="cloud-lane-3"><img class="cloud" src="static/grey.png" /></div>
                 </div>
                 <div id="front"></div>
                 <div class="p-y-10 bg-gray-blue-dark" id="foot"><br /></div>
@@ -447,21 +447,21 @@
                     <h2 class="text-white text-center m-t-0">Why us?</h2>
                     <div class="row p-t-5">
                         <div class="col-sm-8 p-b-0">
-                            <div class="text-center"><img class="media-icon" src="gear.png" /></div>
+                            <div class="text-center"><img class="media-icon" src="static/gear.png" /></div>
                             <div class="text-center">
                                 <h3 class="text-white">Decide how to sell</h3>
                                 <p class="text-white">Set your prices, choose what buying options to offer, and personalize your pages to the colors of your brand.</p>
                             </div>
                         </div>
                         <div class="col-sm-8 p-b-0 m-t-5-xs">
-                            <div class="text-center"><img class="media-icon" src="card.png" /></div>
+                            <div class="text-center"><img class="media-icon" src="static/card.png" /></div>
                             <div class="text-center">
                                 <h3 class="text-white">Become visible online</h3>
                                 <p class="text-white">Welcome buyers on optimized For Sale pages that convert better than any other. Rank on Google in no time!</p>
                             </div>
                         </div>
                         <div class="col-sm-8 p-b-0 m-t-5-xs">
-                            <div class="text-center"><img class="media-icon" src="boi.png" /></div>
+                            <div class="text-center"><img class="media-icon" src="static/boi.png" /></div>
                             <div class="text-center">
                                 <h3 class="text-white">Get paid</h3>
                                 <p class="text-white">Fast &amp; easy domain escrow, daily payouts, fully automated invoicing and more! You can sit back and relax!</p>
@@ -479,11 +479,11 @@
                 window.I18n.locale = "en-us"
             }
         </script>
-        <script src="signup-welcome.js"></script>
-        <script src="signup-marketplace.js" onload="setI18nLocale()"></script>
-        <script src="signup-common.js" defer="defer"></script>
-        <script src="signup-client.js" defer="defer"></script>
+        <script src="static/signup-welcome.js"></script>
+        <script src="static/signup-marketplace.js" onload="setI18nLocale()"></script>
+        <script src="static/signup-common.js" defer="defer"></script>
+        <script src="static/signup-client.js" defer="defer"></script>
 
 </body>
 
-</html>
+</html>s
