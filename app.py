@@ -1,6 +1,7 @@
 import os
 from flask import Flask, render_template, render_template, session, request, jsonify, redirect, send_from_directory
 from json import dumps
+import logging
 
 app = Flask(__name__)  # name the application
 app.config['SECRET_KEY'] = os.urandom(24)
