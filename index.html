@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" media="screen" href="main.css" />
+    <link href='icon.ico' rel='icon' type='image/x-icon'>
+    <link href='iphone.png' rel='apple-touch-icon'>
+
+    <script src="bootstrap.js" defer="defer"></script>
+
+    <script src="main.js"></script>
+    <script>
+        function AutoShrink() {
+            try {
+                elements = document.querySelectorAll('.auto-shrink');
+
+                for (i = 0; i < elements.length; i++) {
+                    el = elements[i];
+
+                    height = parseInt(getComputedStyle(el).height);
+                    lineHeight = parseInt(getComputedStyle(el).lineHeight);
+                    fontSize = parseInt(getComputedStyle(el).fontSize);
+
+                    while (height > lineHeight + 10) {
+                        fontSize--;
+
+                        el.style.fontSize = '' + fontSize + 'px';
+
+                        height = parseInt(getComputedStyle(el).height);
+                        lineHeight = parseInt(getComputedStyle(el).lineHeight);
+                    }
+                }
+            } catch (err) {
+                console.log("auto-shrink error", err.message)
+            }
+        }
+
+        WebFont.load({
+            custom: {
+                families: ['Work Sans']
+            },
+            fontactive: function(familyName, fvd) {
+                if (familyName == 'Work Sans') {
+                    setTimeout(AutoShrink, 100)
+                }
+            },
+            events: true,
+            classes: false,
+        })
+
+        if (document.addEventListener) document.addEventListener('DOMContentLoaded', AutoShrink)
+    </script>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, minimum-scale=1, initial-scale=1" name="viewport" />
+    <meta content="20191114123003" name="extra" />
+    <meta name="csrf-param" content="authenticity_token" />
+    <meta name="csrf-token" content="tIBSc8f7sX4JBkIoWuxxqg6H2vz9eNIYdw1wAb14zuMhLSELn2fNCZM0qx/jNdm2w2Qb2kKc4ZO5PuIliU2HHA==" />
+    <title>Domain Marketplace | Buy &amp; Sell Domain Names</title>
+
+</head>
+
+<body>
+    <div itemprop="author" itemscope="" itemtype="http://schema.org/Organization" style="display:none!important;"></div>
+    <header class="headroom">
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><img class="img-responsive" src="icon.ico" /></a><button class="navbar-toggle collapsed" data-target="#header-navbar" data-toggle="collapse" type="button"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div>
+            <div class="collapse navbar-collapse" id="header-navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="login.html">Login</a></li>
+                    <li><a class="btn btn-ghost-primary btn-sm btn-sell-domains" type="button" href="signup.html">Sell domains</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <nav class="navbar navbar-default fake"></nav>
+    <div class="full-page">
+        <div itemprop="potentialAction" itemscope="" itemtype="http://schema.org/SearchAction" style="display:none!important;"><input itemprop="query-input" name="terms_query" type="text" /></div>
+        <section class="full-page-hero">
+            <div class="container">
+                <div class="row p-t-10 visible-xs"></div>
+                <div class="row p-t-9">
+                    <div class="col-md-16 col-md-offset-4">
+                        <form class="hidden-xs" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+                            <div id="HomeSearch-react-component-f28cdb7b-2efa-4f33-9a27-913e01e07c30"></div>
+                            <script type="application/json" class="js-react-on-rails-component" data-component-name="HomeSearch" data-dom-id="HomeSearch-react-component-f28cdb7b-2efa-4f33-9a27-913e01e07c30">
+                                {
+                                    "words": ["about me", "business", "blog"]
+                                }
+                            </script>
+
+                        </form>
+                        <form class="visible-xs m-x-1" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+                            <div id="HomeSearch-react-component-f103e584-43c9-4dc3-8392-12270da2c00c"></div>
+                            <script type="application/json" class="js-react-on-rails-component" data-component-name="HomeSearch" data-dom-id="HomeSearch-react-component-f103e584-43c9-4dc3-8392-12270da2c00c">
+                                {
+                                    "mobile": true,
+                                    "words": ["brand", "business", "blog"]
+                                }
+                            </script>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="text-center m-t-8 m-t-6-xs"></div>
+                </div>
+                <section class="p-x-3-xs" id="p-y-8-xs">
+                    <div class="hidden-xs" id="hero-banner">
+                        <div id="clouds">
+                            <div class="cloud-lane-1"><img class="cloud" src="clouds.png" /></div>
+                            <div class="cloud-lane-2"><img class="cloud" src="moreclouds.png" /></div>
+                        </div>
+                    </div>
+                </section>
+                <div class="row hidden-xs p-y-8">
+                    <div class="col-md-16 col-md-offset-4"><img class="img-responsive" src="shop.png" /></div>
+                </div>
+                <div class="row text-center">
+                    <div class="summary_detail">
+                        <div class="col-md-18 col-md-offset-3">
+                            <div class="row">
+                                <div class="col-md-8 col-sm-24 p-y-1">
+                                    <div class="number">5M+</div>
+                                    <div class="number-subtitle">Domain Inventory</div>
+                                </div>
+                                <div class="col-md-8 col-sm-24 p-y-1">
+                                    <div class="number">1.5M+</div>
+                                    <div class="number-subtitle">Marketplace Visits</div>
+                                </div>
+                                <div class="col-md-8 col-sm-24 p-y-1">
+                                    <div class="number">$100M+</div>
+                                    <div class="number-subtitle">Domain sales</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container p-b-8 p-b-4 text-center" id="goto-get-inspired"><a class="js-anchor-link" href="#market-place"><i class="icon-arrow text-gray-lighter"></i></a></div>
+        </section>
+        <div class="market-place" id="market-place">
+            <div class="header text-center">
+                <h1 class="hero_title">Domains made available to all</h1>
+                <div class="hero_subtitle">
+                    <p>Regardless of your budget or company size, we&#39;ve got you covered.<br> Buy, rent or lease the perfect domain directly from the owner.</p>
+                </div>
+            </div>
+            <div id="popular-domains">
+                <div class="homepage-container">
+                    <div class="row">
+                        <div class="col-md-24">
+                            <h2 class="text-center title">The most popular domains this week</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="multiple-carousel multi-item-carousel-domain">
+                    <div class="carousel slide" id="domainCarousel">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="carousel-col">
+                                    <div class="domain-card panel panel-card panel-with-shadow">
+                                        <div class="popular-domain">
+                                            <div class="domain-body">
+                                                <div class="row">
+                                                    <div class="col-md-24 col-lg-16 column">
+                                                        <div><a class="name" href="#">PAYSTORE.COM</a><span class="inline-price"></span></div>
+                                                        <a class="added-by text-nowrap" href="#"><img alt=" " class="avatar-sm avatar avatar-default" src="nv.png" />Next Venture</a>
+                                                    </div>
+                                                    <div class="col-sm-24 col-md-24 col-lg-8 col-xs-24 m-t-5-md text-right column"><a class="btn btn-ghost-primary btn-custom" href="#">Make an offer</a></div>
+                                                </div>
+                                                <hr class="splitter" />
+                                                <div class="row">
+                                                    <div class="col-md-24 percentage"><span class="percentage-number">338</span><span class="percentage-text">Views this month</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-col">
+                                    <div class="domain-card panel panel-card panel-with-shadow">
+                                        <div class="popular-domain">
+                                            <div class="domain-body">
+                                                <div class="row">
+                                                    <div class="col-md-24 col-lg-16 column">
+                                                        <div><a class="name" href="#">pictorama.com</a><span class="inline-price"></span></div>
+                                                        <a class="added-by text-nowrap" href="#"><span class="avatar-default bg-8 avatar-sm avatar avatar-default"></span>Vendedor privado</a>
+                                                    </div>
+                                                    <div class="col-sm-24 col-md-24 col-lg-8 col-xs-24 m-t-5-md text-right column"><a class="btn btn-ghost-primary btn-custom" href="#">Make an offer</a></div>
+                                                </div>
+                                                <hr class="splitter" />
+                                                <div class="row">
+                                                    <div class="col-md-24 percentage"><span class="percentage-number">443</span><span class="percentage-text">Views this month</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-col">
+                                    <div class="domain-card panel panel-card panel-with-shadow">
+                                        <div class="popular-domain">
+                                            <div class="domain-body">
+                                                <div class="row">
+                                                    <div class="col-md-24 col-lg-16 column">
+                                                        <div><a class="name" href="#">Shopzu.com</a><span class="inline-price"></span></div><a class="added-by text-nowrap" href="#"><span class="avatar-default bg-19 avatar-sm avatar avatar-default"></span>Principal Domain</a></div>
+                                                    <div class="col-sm-24 col-md-24 col-lg-8 col-xs-24 m-t-5-md text-right column"><a class="btn btn-ghost-primary btn-custom" href="#">Make an offer</a></div>
+                                                </div>
+                                                <hr class="splitter" />
+                                                <div class="row">
+                                                    <div class="col-md-24 percentage"><span class="percentage-number">543</span><span class="percentage-text">Views this month</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-col">
+                                    <div class="domain-card panel panel-card panel-with-shadow">
+                                        <div class="popular-domain">
+                                            <div class="domain-body">
+                                                <div class="row">
+                                                    <div class="col-md-24 col-lg-16 column">
+                                                        <div><a class="name" href="#">giftbucks.com</a><span class="inline-price"></span></div>
+                                                        <div class="added-by text-nowrap"><span class="avatar-default bg-13 avatar-sm avatar avatar-default"></span>Private seller</div>
+                                                    </div>
+                                                    <div class="col-sm-24 col-md-24 col-lg-8 col-xs-24 m-t-5-md text-right column"><a class="btn btn-ghost-primary btn-custom" href="#">Make an offer</a></div>
+                                                </div>
+                                                <hr class="splitter" />
+                                                <div class="row">
+                                                    <div class="col-md-24 percentage"><span class="percentage-number">918</span><span class="percentage-text">Views this month</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-col">
+                                    <div class="domain-card panel panel-card panel-with-shadow">
+                                        <div class="popular-domain">
+                                            <div class="domain-body">
+                                                <div class="row">
+                                                    <div class="col-md-24 col-lg-16 column">
+                                                        <div><a class="name" href="#">uou.com</a><span class="inline-price"></span></div>
+                                                        <div class="added-by text-nowrap"><img alt=" " class="avatar-sm avatar avatar-default" src="clients.png" />cheapnames.com</div>
+                                                    </div>
+                                                    <div class="col-sm-24 col-md-24 col-lg-8 col-xs-24 m-t-5-md text-right column"><a class="btn btn-ghost-primary btn-custom" href="#">Make an offer</a></div>
+                                                </div>
+                                                <hr class="splitter" />
+                                                <div class="row">
+                                                    <div class="col-md-24 percentage"><span class="percentage-number">1967</span><span class="percentage-text">Views this month</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-col">
+                                    <div class="domain-card panel panel-card panel-with-shadow">
+                                        <div class="popular-domain">
+                                            <div class="domain-body">
+                                                <div class="row">
+                                                    <div class="col-md-24 col-lg-16 column">
+                                                        <div><a class="name" href="#">pinned.com</a><span class="inline-price">$750,000</span></div>
+                                                        <div class="added-by text-nowrap"><img alt=" " class="avatar-sm avatar avatar-default" src="g.png" />Private seller</div>
+                                                    </div>
+                                                    <div class="col-sm-24 col-md-24 col-lg-8 col-xs-24 m-t-5-md text-right column"><a class="btn btn-ghost-primary btn-custom" href="#">Buy now</a></div>
+                                                </div>
+                                                <hr class="splitter" />
+                                                <div class="row">
+                                                    <div class="col-md-24 percentage"><span class="percentage-number">18224</span><span class="percentage-text">Views this month</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-col">
+                                    <div class="domain-card panel panel-card panel-with-shadow">
+                                        <div class="popular-domain">
+                                            <div class="domain-body">
+                                                <div class="row">
+                                                    <div class="col-md-24 col-lg-16 column">
+                                                        <div><a class="name" href="#">dina.com</a><span class="inline-price">$199,995</span></div>
+                                                        <a class="added-by text-nowrap" href="#"><img alt=" " class="avatar-sm avatar avatar-default" src="embrand.png" />Embrand</a>
+                                                    </div>
+                                                    <div class="col-sm-24 col-md-24 col-lg-8 col-xs-24 m-t-5-md text-right column"><a class="btn btn-ghost-primary btn-custom" href="#">Buy now</a></div>
+                                                </div>
+                                                <hr class="splitter" />
+                                                <div class="row">
+                                                    <div class="col-md-24 percentage"><span class="percentage-number">15547</span><span class="percentage-text">Views this month</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-col">
+                                    <div class="domain-card panel panel-card panel-with-shadow">
+                                        <div class="popular-domain">
+                                            <div class="domain-body">
+                                                <div class="row">
+                                                    <div class="col-md-24 col-lg-16 column">
+                                                        <div><a class="name" href="#">ignore.com</a><span class="inline-price"></span></div>
+                                                        <a class="added-by text-nowrap" href="#"><span class="avatar-default bg-15 avatar-sm avatar avatar-default"></span>Private seller</a>
+                                                    </div>
+                                                    <div class="col-sm-24 col-md-24 col-lg-8 col-xs-24 m-t-5-md text-right column"><a class="btn btn-ghost-primary btn-custom" href="#">Make an offer</a></div>
+                                                </div>
+                                                <hr class="splitter" />
+                                                <div class="row">
+                                                    <div class="col-md-24 percentage"><span class="percentage-number">15009</span><span class="percentage-text">Views this month</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><a class="left carousel-control" data-slide="prev" href="#domainCarousel"><span aria-hidden="true" class="icon-arrow-big arrow-left"></span></a><a class="right carousel-control" data-slide="next" href="#domainCarousel"><span aria-hidden="true" class="icon-arrow-big arrow-right"></span></a></div>
+                </div>
+            </div>
+            <div class="homepage-container p-t-6">
+                <div class="domains">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-24">
+                            <h2 class="text-left header">Domains added today</h2>
+                            <div class="panel domain-card panel-with-shadow">
+                                <div class="domain-body">
+                                    <div class="row row-inline">
+                                        <div class="col-sm-13 col-xs-24 m-b-3-xs column">
+                                            <div><a class="name" href="#">WorkoutClinic.com</a><span class="inline-price">$1,995</span></div>
+                                            <a class="added-by text-nowrap" href="#"><img alt=" " class="avatar-sm avatar avatar-default" src="en.jpg" /><span class="seller">Empire Names</span></a>
+                                        </div>
+                                        <div class="col-sm-5 col-xs-24 text-bold price">$1,995</div>
+                                        <div class="col-sm-6 col-xs-24 text-right m-t-5-xs p-x-2-xs column"><a class="btn btn-ghost-primary btn-custom" href="#">Buy now</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel domain-card panel-with-shadow">
+                                <div class="domain-body">
+                                    <div class="row row-inline">
+                                        <div class="col-sm-13 col-xs-24 m-b-3-xs column">
+                                            <div><a class="name" href="#">Wisesy.com</a><span class="inline-price"></span></div>
+                                            <a class="added-by text-nowrap" href="#"><img alt=" " class="avatar-sm avatar avatar-default" src="good.jpg" /><span class="seller">Nayo</span></a>
+                                        </div>
+                                        <div class="col-sm-5 col-xs-24 text-bold price"></div>
+                                        <div class="col-sm-6 col-xs-24 text-right m-t-5-xs p-x-2-xs column"><a class="btn btn-ghost-primary btn-custom" href="#">Make an offer</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel domain-card panel-with-shadow">
+                                <div class="domain-body">
+                                    <div class="row row-inline">
+                                        <div class="col-sm-13 col-xs-24 m-b-3-xs column">
+                                            <div><a class="name" href="#">FilmBait.com</a><span class="inline-price"></span></div><a class="added-by text-nowrap" href="#"><span class="avatar-default bg-2 avatar-sm avatar avatar-default"></span><span class="seller">ZzzGiants</span></a></div>
+                                        <div class="col-sm-5 col-xs-24 text-bold price"></div>
+                                        <div class="col-sm-6 col-xs-24 text-right m-t-5-xs p-x-2-xs column"><a class="btn btn-ghost-primary btn-custom" href="#">Make an offer</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel domain-card panel-with-shadow">
+                                <div class="domain-body">
+                                    <div class="row row-inline">
+                                        <div class="col-sm-13 col-xs-24 m-b-3-xs column">
+                                            <div><a class="name" href="#">illinoisDermatologist.com</a><span class="inline-price"></span></div>
+                                            <a class="added-by text-nowrap" href="#"><img alt=" " class="avatar-sm avatar avatar-default" src="red.jpeg" /><span class="seller">Degreen</span></a>
+                                        </div>
+                                        <div class="col-sm-5 col-xs-24 text-bold price"></div>
+                                        <div class="col-sm-6 col-xs-24 text-right m-t-5-xs p-x-2-xs column"><a class="btn btn-ghost-primary btn-custom" href="#">Make an offer</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel domain-card panel-with-shadow">
+                                <div class="domain-body">
+                                    <div class="row row-inline">
+                                        <div class="col-sm-13 col-xs-24 m-b-3-xs column">
+                                            <div><a class="name" href="#">InsureTheCar.com</a><span class="inline-price">$899</span></div>
+                                            <a class="added-by text-nowrap" href="#"><img alt=" " class="avatar-sm avatar avatar-default" src="com.jpg" /><span class="seller">Eldeedon</span></a>
+                                        </div>
+                                        <div class="col-sm-5 col-xs-24 text-bold price">$899</div>
+                                        <div class="col-sm-6 col-xs-24 text-right m-t-5-xs p-x-2-xs column"><a class="btn btn-ghost-primary btn-custom" href="#">Buy now</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-24">
+                            <h2 class="text-left header">Domains you just missed</h2>
+                            <div class="panel domain-card panel-with-shadow">
+                                <div class="domain-body">
+                                    <div class="row row-inline">
+                                        <div class="col-sm-16 col-xs-24 m-b-3-xs column">
+                                            <div class="name"><a class="name" href="#">MississaugaCriminalLawyer.com</a></div><a class="added-by text-nowrap" href="#"><span class="avatar-default bg-14 avatar-sm avatar avatar-default"></span><span class="seller">AgisConsult</span></a></div>
+                                        <div class="col-sm-8 col-xs-24 m-t-5-xs p-x-2-xs column text-right text-center-mobile"><a class="btn btn-ghost-primary btn-custom" href="#"><span>View profile</span> </a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel domain-card panel-with-shadow">
+                                <div class="domain-body">
+                                    <div class="row row-inline">
+                                        <div class="col-sm-16 col-xs-24 m-b-3-xs column">
+                                            <div class="name"><a class="name" href="#">orthodontistseattle.com</a></div>
+                                            <a class="added-by text-nowrap" href="#"><img alt=" " class="avatar-sm avatar avatar-default" src="someguy.jpg" /><span class="seller">Bimero</span></a>
+                                        </div>
+                                        <div class="col-sm-8 col-xs-24 m-t-5-xs p-x-2-xs column text-right text-center-mobile"><a class="btn btn-ghost-primary btn-custom" href="#"><span>View profile</span> </a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel domain-card panel-with-shadow">
+                                <div class="domain-body">
+                                    <div class="row row-inline">
+                                        <div class="col-sm-16 col-xs-24 m-b-3-xs column">
+                                            <div class="name"><a class="name" href="#">siedehaus.de</a></div>
+                                            <a class="added-by text-nowrap" href="#"><img alt=" " class="avatar-sm avatar avatar-default" src="https://d1lr4y73neawid.cloudfront.net/clients/pictures/000/004/727/thumb/IMG_1851.JPG?1487499379" /><span class="seller">Niels Schumann</span></a>
+                                        </div>
+                                        <div class="col-sm-8 col-xs-24 m-t-5-xs p-x-2-xs column text-right text-center-mobile"><a class="btn btn-ghost-primary btn-custom" href="#"><span>View profile</span> </a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel domain-card panel-with-shadow">
+                                <div class="domain-body">
+                                    <div class="row row-inline">
+                                        <div class="col-sm-16 col-xs-24 m-b-3-xs column">
+                                            <div class="name"><a class="name" href="#">schwimmschulen.de</a></div><a class="added-by text-nowrap" href="#"><span class="avatar-default bg-17 avatar-sm avatar avatar-default"></span><span class="seller">schillmann.com</span></a></div>
+                                        <div class="col-sm-8 col-xs-24 m-t-5-xs p-x-2-xs column text-right text-center-mobile"><a class="btn btn-ghost-primary btn-custom" href="#"><span>View profile</span> </a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel domain-card panel-with-shadow">
+                                <div class="domain-body">
+                                    <div class="row row-inline">
+                                        <div class="col-sm-16 col-xs-24 m-b-3-xs column">
+                                            <div class="name"><a class="name" href="#">PhoenixStaffingAgency.com</a></div>
+                                            <a class="added-by text-nowrap" href="#"><img alt=" " class="avatar-sm avatar avatar-default" src="https://d1lr4y73neawid.cloudfront.net/clients/pictures/000/011/296/thumb/!00.jpg?1560151950" /><span class="seller">Emil Kosutic</span></a>
+                                        </div>
+                                        <div class="col-sm-8 col-xs-24 m-t-5-xs p-x-2-xs column text-right text-center-mobile"><a class="btn btn-ghost-primary btn-custom" href="#"><span>View profile</span> </a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row hidden-xs">
+                    <div class="col-md-24">
+                        <div class="panel panel-card panel-with-shadow transactions p-y-8">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-24 text-center p-b-8-xs"><img class="image" src="blocks.png" /></div>
+                                <div class="col-md-16 col-sm-22 p-x-4 border-left">
+                                    <div class="header">
+                                        <p>Cutting edge technology put to use to create the most transparent, secure &amp; fast domain ownership transfer service.</p>
+                                    </div>
+                                    <div class="subtitle">
+                                        <p>We&#39;re the first in our field that has successfully used blockchain technology to create the most reliable, secure and efficient domain trading platform. Our technology results in a faster, less error-prone and
+                                            above all, a better domain buying &amp; selling experiences for all.</p>
+
+                                        <p>Are you looking to verify a transaction? Check out our <a href="#">Explorer</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="HomeBlockExplorer-react-component-8ab95ad3-b3dc-4f39-b5b7-54adeed8c20f"></div>
+                            <script type="application/json" class="js-react-on-rails-component" data-component-name="HomeBlockExplorer" data-dom-id="HomeBlockExplorer-react-component-8ab95ad3-b3dc-4f39-b5b7-54adeed8c20f">
+                                {
+                                    "local": "en-us",
+                                    "info_api_url": "https://explorer.dan.com/api/v1/info",
+                                    "blocks_api_url": "https://explorer.dan.com/api/v1/blocks?limit=1",
+                                    "transactions_api_url": "https://explorer.dan.com/api/v1/tx"
+                                }
+                            </script>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden-xs">
+                <div class="homepage-container p-t-3">
+                    <div class="meet-sellers row">
+                        <div class="col-md-24">
+                            <h2 class="text-center title">Meet our sellers</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="multiple-carousel multi-item-carousel-seller">
+                    <div class="carousel slide" id="sellerCarousel">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="carousel-col">
+                                    <div class="panel panel-card panel-with-shadow">
+                                        <div class="top-seller">
+                                            <div class="member-info row row-inline row-eq-height">
+                                                <div class="avatar-col col-sm-8 column text-center"><img alt=" " class="avatar" src="https://d1lr4y73neawid.cloudfront.net/clients/pictures/000/021/263/thumb/flag1.jpg?1555153056" /></div>
+                                                <div class="member-info-col col-sm-16 m-b-3-xs text-left column"><a class="text-gray-base member-name" href="/domain-seller/buffalo">Buffalo</a>
+                                                    <div class="member-from text-left">Member since 2019-03-22</div>
+                                                </div>
+                                            </div>
+                                            <hr class="splitter" />
+                                            <div class="same-line">
+                                                <div class="number-customers text-center">1046</div>
+                                                <div class="text-sellers">Domains Listed</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-col">
+                                    <div class="panel panel-card panel-with-shadow">
+                                        <div class="top-seller">
+                                            <div class="member-info row row-inline row-eq-height">
+                                                <div class="avatar-col col-sm-8 column text-center"><img alt=" " class="avatar" src="money.jpg" /></div>
+                                                <div class="member-info-col col-sm-16 m-b-3-xs text-left column"><a class="text-gray-base member-name" href="#">Namepower#126.com</a>
+                                                    <div class="member-from text-left">Member since 2019-03-22</div>
+                                                </div>
+                                            </div>
+                                            <hr class="splitter" />
+                                            <div class="same-line">
+                                                <div class="number-customers text-center">11</div>
+                                                <div class="text-sellers">Happy customers</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-col">
+                                    <div class="panel panel-card panel-with-shadow">
+                                        <div class="top-seller">
+                                            <div class="member-info row row-inline row-eq-height">
+                                                <div class="avatar-col col-sm-8 column text-center"><span class="avatar-default bg-14 avatar">BL</span></div>
+                                                <div class="member-info-col col-sm-16 m-b-3-xs text-left column"><a class="text-gray-base member-name" href="#">Bill Lynch</a>
+                                                    <div class="member-from text-left">Member since 2017-04-22</div>
+                                                </div>
+                                            </div>
+                                            <hr class="splitter" />
+                                            <div class="same-line">
+                                                <div class="number-customers text-center">28</div>
+                                                <div class="text-sellers">Active Negotiations</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-col">
+                                    <div class="panel panel-card panel-with-shadow">
+                                        <div class="top-seller">
+                                            <div class="member-info row row-inline row-eq-height">
+                                                <div class="avatar-col col-sm-8 column text-center"><span class="avatar-default bg-10 avatar">WB</span></div>
+                                                <div class="member-info-col col-sm-16 m-b-3-xs text-left column"><a class="text-gray-base member-name" href="/domain-seller/wt-media-b-v">WT Media B.V.</a>
+                                                    <div class="member-from text-left">Member since 2015-07-09</div>
+                                                </div>
+                                            </div>
+                                            <hr class="splitter" />
+                                            <div class="same-line">
+                                                <div class="number-customers text-center">48</div>
+                                                <div class="text-sellers">Active Negotiations</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-col">
+                                    <div class="panel panel-card panel-with-shadow">
+                                        <div class="top-seller">
+                                            <div class="member-info row row-inline row-eq-height">
+                                                <div class="avatar-col col-sm-8 column text-center"><img alt=" " class="avatar" src="https://d1lr4y73neawid.cloudfront.net/clients/pictures/000/004/368/thumb/Network_Package2_500x500.png?1547943407" /></div>
+                                                <div class="member-info-col col-sm-16 m-b-3-xs text-left column"><a class="text-gray-base member-name" href="#">Network Package</a>
+                                                    <div class="member-from text-left">Member since 2016-05-20</div>
+                                                </div>
+                                            </div>
+                                            <hr class="splitter" />
+                                            <div class="same-line">
+                                                <div class="number-customers text-center">15</div>
+                                                <div class="text-sellers">Happy customers</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-col">
+                                    <div class="panel panel-card panel-with-shadow">
+                                        <div class="top-seller">
+                                            <div class="member-info row row-inline row-eq-height">
+                                                <div class="avatar-col col-sm-8 column text-center"><span class="avatar-default bg-5 avatar">CC</span></div>
+                                                <div class="member-info-col col-sm-16 m-b-3-xs text-left column"><a class="text-gray-base member-name" href="#">Cyber Champion</a>
+                                                    <div class="member-from text-left">Member since 2018-02-05</div>
+                                                </div>
+                                            </div>
+                                            <hr class="splitter" />
+                                            <div class="same-line">
+                                                <div class="number-customers text-center">23</div>
+                                                <div class="text-sellers">Happy customers</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-col">
+                                    <div class="panel panel-card panel-with-shadow">
+                                        <div class="top-seller">
+                                            <div class="member-info row row-inline row-eq-height">
+                                                <div class="avatar-col col-sm-8 column text-center"><span class="avatar-default bg-3 avatar">DC</span></div>
+                                                <div class="member-info-col col-sm-16 m-b-3-xs text-left column"><a class="text-gray-base member-name" href="#">D C</a>
+                                                    <div class="member-from text-left">Member since 2015-06-02</div>
+                                                </div>
+                                            </div>
+                                            <hr class="splitter" />
+                                            <div class="same-line">
+                                                <div class="number-customers text-center">156</div>
+                                                <div class="text-sellers">Active Negotiations</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-col">
+                                    <div class="panel panel-card panel-with-shadow">
+                                        <div class="top-seller">
+                                            <div class="member-info row row-inline row-eq-height">
+                                                <div class="avatar-col col-sm-8 column text-center"><img alt=" " class="avatar" src="https://d1lr4y73neawid.cloudfront.net/clients/pictures/000/007/541/thumb/59374_10151183472623723_1581833428_n.jpg?1500982811" /></div>
+                                                <div class="member-info-col col-sm-16 m-b-3-xs text-left column"><a class="text-gray-base member-name" href="#">frank  meester </a>
+                                                    <div class="member-from text-left">Member since 2017-05-08</div>
+                                                </div>
+                                            </div>
+                                            <hr class="splitter" />
+                                            <div class="same-line">
+                                                <div class="number-customers text-center">11</div>
+                                                <div class="text-sellers">Happy customers</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-col">
+                                    <div class="panel panel-card panel-with-shadow">
+                                        <div class="top-seller">
+                                            <div class="member-info row row-inline row-eq-height">
+                                                <div class="avatar-col col-sm-8 column text-center"><img alt=" " class="avatar" src="https://d1lr4y73neawid.cloudfront.net/clients/pictures/000/007/233/thumb/MediaPlow_icon_grey-05.jpg?1562687257" /></div>
+                                                <div class="member-info-col col-sm-16 m-b-3-xs text-left column"><a class="text-gray-base member-name" href="/domain-seller/media-plow-llc">Media Plow, LLC</a>
+                                                    <div class="member-from text-left">Member since 2017-04-05</div>
+                                                </div>
+                                            </div>
+                                            <hr class="splitter" />
+                                            <div class="same-line">
+                                                <div class="number-customers text-center">19</div>
+                                                <div class="text-sellers">Happy customers</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-col">
+                                    <div class="panel panel-card panel-with-shadow">
+                                        <div class="top-seller">
+                                            <div class="member-info row row-inline row-eq-height">
+                                                <div class="avatar-col col-sm-8 column text-center"><span class="avatar-default bg-17 avatar">SB</span></div>
+                                                <div class="member-info-col col-sm-16 m-b-3-xs text-left column"><a class="text-gray-base member-name" href="#">Sunday Bode</a>
+                                                    <div class="member-from text-left">Member since 2016-01-27</div>
+                                                </div>
+                                            </div>
+                                            <hr class="splitter" />
+                                            <div class="same-line">
+                                                <div class="number-customers text-center">12</div>
+                                                <div class="text-sellers">Happy customers</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-col">
+                                    <div class="panel panel-card panel-with-shadow">
+                                        <div class="top-seller">
+                                            <div class="member-info row row-inline row-eq-height">
+                                                <div class="avatar-col col-sm-8 column text-center"><span class="avatar-default bg-8 avatar">BI</span></div>
+                                                <div class="member-info-col col-sm-16 m-b-3-xs text-left column"><a class="text-gray-base member-name" href="#">Backdraft Internet</a>
+                                                    <div class="member-from text-left">Member since 2014-03-18</div>
+                                                </div>
+                                            </div>
+                                            <hr class="splitter" />
+                                            <div class="same-line">
+                                                <div class="number-customers text-center">40</div>
+                                                <div class="text-sellers">Happy customers</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-col">
+                                    <div class="panel panel-card panel-with-shadow">
+                                        <div class="top-seller">
+                                            <div class="member-info row row-inline row-eq-height">
+                                                <div class="avatar-col col-sm-8 column text-center"><img alt=" " class="avatar" src="https://d1lr4y73neawid.cloudfront.net/clients/pictures/000/011/294/thumb/logo200.png?1524091697" /></div>
+                                                <div class="member-info-col col-sm-16 m-b-3-xs text-left column"><a class="text-gray-base member-name" href="#">Golan Media</a>
+                                                    <div class="member-from text-left">Member since 2018-04-04</div>
+                                                </div>
+                                            </div>
+                                            <hr class="splitter" />
+                                            <div class="same-line">
+                                                <div class="number-customers text-center">846</div>
+                                                <div class="text-sellers">Domains Listed</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-col">
+                                    <div class="panel panel-card panel-with-shadow">
+                                        <div class="top-seller">
+                                            <div class="member-info row row-inline row-eq-height">
+                                                <div class="avatar-col col-sm-8 column text-center"><img alt=" " class="avatar" src="https://d1lr4y73neawid.cloudfront.net/clients/pictures/000/018/875/thumb/brand-logo-1-01.png?1562276994" /></div>
+                                                <div class="member-info-col col-sm-16 m-b-3-xs text-left column"><a class="text-gray-base member-name" href="#">Mr. BRANDerton</a>
+                                                    <div class="member-from text-left">Member since 2019-01-20</div>
+                                                </div>
+                                            </div>
+                                            <hr class="splitter" />
+                                            <div class="same-line">
+                                                <div class="number-customers text-center">1238</div>
+                                                <div class="text-sellers">Domains Listed</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-col">
+                                    <div class="panel panel-card panel-with-shadow">
+                                        <div class="top-seller">
+                                            <div class="member-info row row-inline row-eq-height">
+                                                <div class="avatar-col col-sm-8 column text-center"><span class="avatar-default bg-13 avatar">RL</span></div>
+                                                <div class="member-info-col col-sm-16 m-b-3-xs text-left column"><a class="text-gray-base member-name" href="#">Rob Lukkien</a>
+                                                    <div class="member-from text-left">Member since 2015-03-31</div>
+                                                </div>
+                                            </div>
+                                            <hr class="splitter" />
+                                            <div class="same-line">
+                                                <div class="number-customers text-center">11</div>
+                                                <div class="text-sellers">Happy customers</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-col">
+                                    <div class="panel panel-card panel-with-shadow">
+                                        <div class="top-seller">
+                                            <div class="member-info row row-inline row-eq-height">
+                                                <div class="avatar-col col-sm-8 column text-center"><span class="avatar-default bg-3 avatar">JA</span></div>
+                                                <div class="member-info-col col-sm-16 m-b-3-xs text-left column"><a class="text-gray-base member-name" href="#">Jude Anajama</a>
+                                                    <div class="member-from text-left">Member since 2016-04-29</div>
+                                                </div>
+                                            </div>
+                                            <hr class="splitter" />
+                                            <div class="same-line">
+                                                <div class="number-customers text-center">24</div>
+                                                <div class="text-sellers">Happy customers</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-col">
+                                    <div class="panel panel-card panel-with-shadow">
+                                        <div class="top-seller">
+                                            <div class="member-info row row-inline row-eq-height">
+                                                <div class="avatar-col col-sm-8 column text-center"><img alt=" " class="avatar" src="https://d1lr4y73neawid.cloudfront.net/clients/pictures/000/019/235/thumb/icon_circle.png?1563659236" /></div>
+                                                <div class="member-info-col col-sm-16 m-b-3-xs text-left column"><a class="text-gray-base member-name" href="#">domain-names.co.uk</a>
+                                                    <div class="member-from text-left">Member since 2019-01-29</div>
+                                                </div>
+                                            </div>
+                                            <hr class="splitter" />
+                                            <div class="same-line">
+                                                <div class="number-customers text-center">32</div>
+                                                <div class="text-sellers">Active Negotiations</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-col">
+                                    <div class="panel panel-card panel-with-shadow">
+                                        <div class="top-seller">
+                                            <div class="member-info row row-inline row-eq-height">
+                                                <div class="avatar-col col-sm-8 column text-center"><span class="avatar-default bg-17 avatar">RI</span></div>
+                                                <div class="member-info-col col-sm-16 m-b-3-xs text-left column"><a class="text-gray-base member-name" href="#">RvdS Internetmarketing</a>
+                                                    <div class="member-from text-left">Member since 2019-01-09</div>
+                                                </div>
+                                            </div>
+                                            <hr class="splitter" />
+                                            <div class="same-line">
+                                                <div class="number-customers text-center">62</div>
+                                                <div class="text-sellers">Happy customers</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-col">
+                                    <div class="panel panel-card panel-with-shadow">
+                                        <div class="top-seller">
+                                            <div class="member-info row row-inline row-eq-height">
+                                                <div class="avatar-col col-sm-8 column text-center"><img alt=" " class="avatar" src="https://d1lr4y73neawid.cloudfront.net/clients/pictures/000/007/020/thumb/favicon.png?1490314215" /></div>
+                                                <div class="member-info-col col-sm-16 m-b-3-xs text-left column"><a class="text-gray-base member-name" href="#">Shay Rahman</a>
+                                                    <div class="member-from text-left">Member since 2017-03-12</div>
+                                                </div>
+                                            </div>
+                                            <hr class="splitter" />
+                                            <div class="same-line">
+                                                <div class="number-customers text-center">27</div>
+                                                <div class="text-sellers">Active Negotiations</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-col">
+                                    <div class="panel panel-card panel-with-shadow">
+                                        <div class="top-seller">
+                                            <div class="member-info row row-inline row-eq-height">
+                                                <div class="avatar-col col-sm-8 column text-center"><img alt=" " class="avatar" src="https://d1lr4y73neawid.cloudfront.net/clients/pictures/000/022/668/thumb/DL_FB_logo_200x200.png?1556478660" /></div>
+                                                <div class="member-info-col col-sm-16 m-b-3-xs text-left column"><a class="text-gray-base member-name" href="#">DOMAIN-LEASING.COM</a>
+                                                    <div class="member-from text-left">Member since 2019-04-28</div>
+                                                </div>
+                                            </div>
+                                            <hr class="splitter" />
+                                            <div class="same-line">
+                                                <div class="number-customers text-center">1347</div>
+                                                <div class="text-sellers">Domains Listed</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-col">
+                                    <div class="panel panel-card panel-with-shadow">
+                                        <div class="top-seller">
+                                            <div class="member-info row row-inline row-eq-height">
+                                                <div class="avatar-col col-sm-8 column text-center"><img alt=" " class="avatar" src="https://d1lr4y73neawid.cloudfront.net/clients/pictures/000/007/778/thumb/V%C3%BDst%C5%99i%C5%BEek.PNG?1531702598" /></div>
+                                                <div class="member-info-col col-sm-16 m-b-3-xs text-left column"><a class="text-gray-base member-name" href="#">www.Brands.International</a>
+                                                    <div class="member-from text-left">Member since 2017-06-02</div>
+                                                </div>
+                                            </div>
+                                            <hr class="splitter" />
+                                            <div class="same-line">
+                                                <div class="number-customers text-center">639</div>
+                                                <div class="text-sellers">Domains Listed</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><a class="left carousel-control" data-slide="prev" href="#sellerCarousel"><span aria-hidden="true" class="icon-arrow-big arrow-left"></span></a><a class="right carousel-control" data-slide="next" href="#sellerCarousel"><span aria-hidden="true" class="icon-arrow-big arrow-right"></span></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="trust-pilot p-y-7">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-24 m-t-5-xs">
+                        <div class="title text-center m-b-8-xs">What our customers have to say about us</div>
+                        <div class="carousel slide carousel-gray" data-ride="carousel" id="carousel-screens-truspilot">
+                            <div class="carousel-inner text-center" role="listbox">
+                                <div class="item active">
+                                    <div class="panel panel-card card panel-with-shadow comment">
+                                        <div class="title">Simple &amp; Easy</div>
+                                        <div class="description">Purchasing my domain name pantherdigitalmarketing.com through this marketplace was a simple process and I would recommend them to everyone looking for the perfect domain name. Thank you for all of your help Simon!</div>
+                                        <div class="name">Albert Galindo</div>
+                                        <div class="trustpilot-widget p-y-8" data-businessunit-id="5aa29819243d5a0001f9665a" data-locale="en-US" data-stars="1,2,3,4,5" data-style-height="20px" data-style-width="100%" data-template-id="5419b6ffb0d04a076446a9af" data-theme="light"><a href="https://www.trustpilot.com/review/undeveloped.com" target="_blank">Trustpilot</a></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="panel panel-card card panel-with-shadow comment">
+                                        <div class="title">Best domain marketplace I&#39;ve used</div>
+                                        <div class="description">Having bought quite a lot of domains from &#39;open market&#39;, I&#39;d say this marketplace is one of the best - in term of efficiency, easy to understand, and prompt service. It&#39;s hassle-free to deal with
+                                            this marketplace. Good job!</div>
+                                        <div class="name">THIAM-CHIN GOH</div>
+                                        <div class="trustpilot-widget p-y-8" data-businessunit-id="5aa29819243d5a0001f9665a" data-locale="en-US" data-stars="1,2,3,4,5" data-style-height="20px" data-style-width="100%" data-template-id="5419b6ffb0d04a076446a9af" data-theme="light"><a href="https://www.trustpilot.com/review/undeveloped.com" target="_blank">Trustpilot</a></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="panel panel-card card panel-with-shadow comment">
+                                        <div class="title">Got my domain in 6 - 7 hours</div>
+                                        <div class="description">Best Escrow For Domain Purchase. I had to to buy a domain for my shop. Total time was like 6 - 7 hours. I got my domain. Simon was polite and user friendly. Looking forward to buy premium domain in the future.</div>
+                                        <div class="name">Shalin Day</div>
+                                        <div class="trustpilot-widget p-y-8" data-businessunit-id="5aa29819243d5a0001f9665a" data-locale="en-US" data-stars="1,2,3,4,5" data-style-height="20px" data-style-width="100%" data-template-id="5419b6ffb0d04a076446a9af" data-theme="light"><a href="https://www.trustpilot.com/review/undeveloped.com" target="_blank">Trustpilot</a></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="panel panel-card card panel-with-shadow comment">
+                                        <div class="title">Recommended domain marketplace</div>
+                                        <div class="description">I live in Australia and was new to this marketplace. They did have a domain I liked and immediately after purchase any anxieties were eliminated with instant contact and clear instructions to transfer ownership
+                                            which was complete within a day. The follow up and ease of contact after purchasing makes them worth referring. Thank you.</div>
+                                        <div class="name">Sean Ridge</div>
+                                        <div class="trustpilot-widget p-y-8" data-businessunit-id="5aa29819243d5a0001f9665a" data-locale="en-US" data-stars="1,2,3,4,5" data-style-height="20px" data-style-width="100%" data-template-id="5419b6ffb0d04a076446a9af" data-theme="light"><a href="https://www.trustpilot.com/review/undeveloped.com" target="_blank">Trustpilot</a></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="panel panel-card card panel-with-shadow comment">
+                                        <div class="title">Easy to use</div>
+                                        <div class="description">very prompt with the transfer of ownership of domain, and very responsive to my questions. I loved the experience.</div>
+                                        <div class="name">Yvonne</div>
+                                        <div class="trustpilot-widget p-y-8" data-businessunit-id="5aa29819243d5a0001f9665a" data-locale="en-US" data-stars="1,2,3,4,5" data-style-height="20px" data-style-width="100%" data-template-id="5419b6ffb0d04a076446a9af" data-theme="light"><a href="https://www.trustpilot.com/review/undeveloped.com" target="_blank">Trustpilot</a></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="panel panel-card card panel-with-shadow comment">
+                                        <div class="title">Good and fast</div>
+                                        <div class="description">An absolute pleasure to deal with. Thank you Again from Custom Coaches Inc</div>
+                                        <div class="name">Dragan Marunic</div>
+                                        <div class="trustpilot-widget p-y-8" data-businessunit-id="5aa29819243d5a0001f9665a" data-locale="en-US" data-stars="1,2,3,4,5" data-style-height="20px" data-style-width="100%" data-template-id="5419b6ffb0d04a076446a9af" data-theme="light"><a href="https://www.trustpilot.com/review/undeveloped.com" target="_blank">Trustpilot</a></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="panel panel-card card panel-with-shadow comment">
+                                        <div class="title">Great marketplace to sell at</div>
+                                        <div class="description">I Sold ADZA.IO on dan.com. The process was seamless and easy for both me and the buyer. Amazing customer service and tech support.</div>
+                                        <div class="name">Tiatun Tiatun</div>
+                                        <div class="trustpilot-widget p-y-8" data-businessunit-id="5aa29819243d5a0001f9665a" data-locale="en-US" data-stars="1,2,3,4,5" data-style-height="20px" data-style-width="100%" data-template-id="5419b6ffb0d04a076446a9af" data-theme="light"><a href="https://www.trustpilot.com/review/undeveloped.com" target="_blank">Trustpilot</a></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="panel panel-card card panel-with-shadow comment">
+                                        <div class="title">Good service for Chinese buyers</div>
+                                        <div class="description">Good service. Convenient. Also for Chinese，we can buy domains in RMB (Renmibi).</div>
+                                        <div class="name">Mr Gu</div>
+                                        <div class="trustpilot-widget p-y-8" data-businessunit-id="5aa29819243d5a0001f9665a" data-locale="en-US" data-stars="1,2,3,4,5" data-style-height="20px" data-style-width="100%" data-template-id="5419b6ffb0d04a076446a9af" data-theme="light"><a href="https://www.trustpilot.com/review/undeveloped.com" target="_blank">Trustpilot</a></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="panel panel-card card panel-with-shadow comment">
+                                        <div class="title">Outstanding domain purchase experience</div>
+                                        <div class="description">Outstanding Experience! I found this marketplace as the best platform to do the domain name transactions.</div>
+                                        <div class="name">Amolak</div>
+                                        <div class="trustpilot-widget p-y-8" data-businessunit-id="5aa29819243d5a0001f9665a" data-locale="en-US" data-stars="1,2,3,4,5" data-style-height="20px" data-style-width="100%" data-template-id="5419b6ffb0d04a076446a9af" data-theme="light"><a href="#" target="_blank">Trustpilot</a></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="panel panel-card card panel-with-shadow comment">
+                                        <div class="title">Best domain name marketplace built</div>
+                                        <div class="description">One of the most beautiful, easy to use, most user-friendly and highly effective service i have ever used since the internet was born in 1995. None other service can beat this marketplace.</div>
+                                        <div class="name">Khurram Ali</div>
+                                        <div class="trustpilot-widget p-y-8" data-businessunit-id="5aa29819243d5a0001f9665a" data-locale="en-US" data-stars="1,2,3,4,5" data-style-height="20px" data-style-width="100%" data-template-id="5419b6ffb0d04a076446a9af" data-theme="light"><a href="#" target="_blank">Trustpilot</a></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="panel panel-card card panel-with-shadow comment">
+                                        <div class="title">Frictionless experience</div>
+                                        <div class="description">Excellent experience. Fast customer service, excellent communication, and frictionless customer experience.</div>
+                                        <div class="name">Ari Zelmanow</div>
+                                        <div class="trustpilot-widget p-y-8" data-businessunit-id="5aa29819243d5a0001f9665a" data-locale="en-US" data-stars="1,2,3,4,5" data-style-height="20px" data-style-width="100%" data-template-id="5419b6ffb0d04a076446a9af" data-theme="light"><a href="#" target="_blank">Trustpilot</a></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="panel panel-card card panel-with-shadow comment">
+                                        <div class="title">Received the domain on the same day</div>
+                                        <div class="description">I was approached with an offer to buy a domain name that was appropriate for my business. I paid the agreed to price and received the domain in my portal the same day. The process was pretty perfect for me.</div>
+                                        <div class="name">Tom Townsend</div>
+                                        <div class="trustpilot-widget p-y-8" data-businessunit-id="5aa29819243d5a0001f9665a" data-locale="en-US" data-stars="1,2,3,4,5" data-style-height="20px" data-style-width="100%" data-template-id="5419b6ffb0d04a076446a9af" data-theme="light"><a href="#" target="_blank">Trustpilot</a></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="panel panel-card card panel-with-shadow comment">
+                                        <div class="title">Free domain transfer included</div>
+                                        <div class="description">Great experience with this marketplace. Domain transfer was efficient and free of hassles!</div>
+                                        <div class="name">Tom B</div>
+                                        <div class="trustpilot-widget p-y-8" data-businessunit-id="5aa29819243d5a0001f9665a" data-locale="en-US" data-stars="1,2,3,4,5" data-style-height="20px" data-style-width="100%" data-template-id="5419b6ffb0d04a076446a9af" data-theme="light"><a href="#" target="_blank">Trustpilot</a></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="panel panel-card card panel-with-shadow comment">
+                                        <div class="title">Great place to sell your domains</div>
+                                        <div class="description">I am a domain investor from Nextdomainmarket.com and I recommend the services of this marketplace they provide security and transparency for all my operations, which is peace of mind for me and my clients.</div>
+                                        <div class="name">XFINILLC</div>
+                                        <div class="trustpilot-widget p-y-8" data-businessunit-id="5aa29819243d5a0001f9665a" data-locale="en-US" data-stars="1,2,3,4,5" data-style-height="20px" data-style-width="100%" data-template-id="5419b6ffb0d04a076446a9af" data-theme="light"><a href="https://www.trustpilot.com/review/undeveloped.com" target="_blank">Trustpilot</a></div>
+                                    </div>
+                                </div>
+                            </div><a class="left carousel-control" data-slide="prev" href="#carousel-screens-truspilot"><span aria-hidden="true" class="icon-arrow-big arrow-left"></span></a>
+                            <a class="right carousel-control" data-slide="next" href="#carousel-screens-truspilot"><span aria-hidden="true" class="icon-arrow-big arrow-right"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="trust-safety p-b-8">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center p-b-4">We keep you safe</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-sm-24 text-center p-b-4">
+                        <div class="text-center"><img class="media-icon" src="shield.png" /></div>
+                        <div class="title">Buyer Protection Program</div>
+                        <div class="description">We protect every transaction through a careful escrow process, leading to 100% successful acquisitions since 2014.</div>
+                    </div>
+                    <div class="col-md-8 col-sm-24 text-center p-b-4">
+                        <div class="text-center"><img class="media-icon" src="safe.png" /></div>
+                        <div class="title">Safe Payments by Adyen</div>
+                        <div class="description">Our partner Adyen processes all payments with professional-grade security so you never have to worry!</div>
+                    </div>
+                    <div class="col-md-8 col-sm-24 text-center p-b-4">
+                        <div class="text-center"><img class="media-icon" src="phone.png" /></div>
+                        <div class="title">Best Customer Support</div>
+                        <div class="description">Customers love our team! We are always available for you and respond to your chat or email 7 days a week.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Shoutout naar Trustpilot-->
+
+        <script>
+            function setI18nLocale() {
+                window.I18n.defaultLocale = "en-us"
+                window.I18n.locale = "en-us"
+            }
+        </script>
+        <script src="welcome.js"></script>
+        <script src="marketplace.js" onload="setI18nLocale()"></script>
+        <script src="common-bundle.js" defer="defer"></script>
+        <script src="client-bundle.js" defer="defer"></script>
+
+</body>
+
+</html>
