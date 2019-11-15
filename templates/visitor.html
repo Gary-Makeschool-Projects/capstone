@@ -55,7 +55,9 @@
 </head>
 
 <body>
-
+    {% if session %}
+    <H1>Your ip address {{ip}}</H1>
+    {% endif %}
     <div itemprop="author" style="display:none!important;"></div>
     <header class="headroom">
         <nav class="navbar navbar-default">
@@ -63,7 +65,6 @@
                 <a class="navbar-brand" href="#"><img class="img-responsive" src="static/icon.ico" /></a><button class="navbar-toggle collapsed" data-target="#header-navbar" data-toggle="collapse" type="button"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div>
             <div class="collapse navbar-collapse" id="header-navbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Ip: {{ip}}</a></li>
                     <li><a href="{{url_for('login')}}">Login</a></li>
                     <li><a class="btn btn-ghost-primary btn-sm btn-sell-domains" type="button" href="{{url_for('signup')}}">Sell domains</a></li>
                 </ul>
