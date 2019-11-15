@@ -3,7 +3,8 @@ from flask import Flask, render_template, render_template, session, request, jso
 from json import dumps
 
 app = Flask(__name__)  # name the application
-
+app.config['SECRET_KEY'] = os.urandom(24)
+app.secret_key = os.environ.get('SECRET_KEY')
 
 # index and root route
 @app.route('/')
@@ -19,7 +20,6 @@ def index():
                 'server_ip':  request.remote_addr,
                 'client_ip': request.environ.get('HTTP_X_FORWARDED_FOR'),
                 'real_ip': request.environ.get('HTTP_X_REAL_IP')
-
             }
             session['visitor'] = dumps(data)
             ip = session['visitor']
