@@ -24,8 +24,6 @@ def index():
             session['visitor'] = dumps(data)
             ip = session['visitor']
             return render_template('index.html', ip=ip)
-    else:
-        return redirect('index')
 
 
 @app.route('/login', methods=['GET'])
